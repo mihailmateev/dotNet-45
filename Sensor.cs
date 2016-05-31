@@ -4,8 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace haengematte
+namespace CloudantCRUD
 {
+    #region Sensor
+    /// <summary>
+    /// Sensor class 
+    /// this class is used to manage data from sensors
+    /// </summary>
     public class Sensor
     {
         public string time;
@@ -24,7 +29,9 @@ namespace haengematte
 
         public static Sensor Update(Sensor sensor, string revision)
         {
-            return new Sensor { time = sensor.time, dspl = sensor.dspl ,  temp = sensor.temp, hmdt = sensor.hmdt };
+            return new Sensor { time = sensor.time, dspl = sensor.dspl, temp = sensor.temp, hmdt = sensor.hmdt };
         }
     }
+
+    #endregion Sensor
 }
